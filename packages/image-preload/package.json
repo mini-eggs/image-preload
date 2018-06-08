@@ -1,11 +1,11 @@
 {
   "name": "image-preload",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple, framework-agnostic image preloader. Async, sync, background, foreground, whatever!",
   "main": "dist/main.js",
   "scripts": {
     "test": "jest",
-    "build": "tsc -d --outDir dist --rootDir src && rm dist/main.js && webpack-cli --mode production"
+    "build": "tsc -d --outDir dist --rootDir src && rm dist/main.js && webpack-cli --mode production && webpack-cli --mode-production --config webpack.browser.js"
   },
   "repository": {
     "type": "git",
