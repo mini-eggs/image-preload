@@ -1,0 +1,75 @@
+0 silly input [ 'build' ]
+1 silly flags { _: [ 'run' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   scope: 'image-preload',
+1 silly flags   script: 'build',
+1 silly flags   args: [] }
+2 verbose rootPath /home/evan/Projects/image-preload
+3 info version 2.11.0
+4 silly existsSync /home/evan/Projects/image-preload/VERSION
+5 info scope image-preload
+6 silly initialize attempt
+7 silly initialize success
+8 silly execute attempt
+9 silly runScriptInDir build [] image-preload
+10 silly getExecOpts { cwd: '/home/evan/Projects/image-preload/packages/image-preload' }
+11 error build Errored while running script in 'image-preload'
+12 error execute callback with error
+13 error Error: Command failed: npm run build
+13 error /home/evan/Projects/image-preload/packages/image-preload/node_modules/webpack-cli/bin/cli.js:244
+13 error 				throw err;
+13 error 				^
+13 error
+13 error ReferenceError: resolve is not defined
+13 error     at Object.<anonymous> (/home/evan/Projects/image-preload/packages/image-preload/webpack.browser.js:4:6)
+13 error     at Module._compile (/home/evan/Projects/image-preload/packages/image-preload/node_modules/v8-compile-cache/v8-compile-cache.js:178:30)
+13 error     at Object.Module._extensions..js (internal/modules/cjs/loader.js:665:10)
+13 error     at Module.load (internal/modules/cjs/loader.js:566:32)
+13 error     at tryModuleLoad (internal/modules/cjs/loader.js:506:12)
+13 error     at Function.Module._load (internal/modules/cjs/loader.js:498:3)
+13 error     at Module.require (internal/modules/cjs/loader.js:598:17)
+13 error     at require (/home/evan/Projects/image-preload/packages/image-preload/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+13 error     at WEBPACK_OPTIONS (/home/evan/Projects/image-preload/packages/image-preload/node_modules/webpack-cli/bin/convert-argv.js:133:13)
+13 error     at requireConfig (/home/evan/Projects/image-preload/packages/image-preload/node_modules/webpack-cli/bin/convert-argv.js:135:6)
+13 error     at /home/evan/Projects/image-preload/packages/image-preload/node_modules/webpack-cli/bin/convert-argv.js:142:17
+13 error     at Array.forEach (<anonymous>)
+13 error     at module.exports (/home/evan/Projects/image-preload/packages/image-preload/node_modules/webpack-cli/bin/convert-argv.js:140:15)
+13 error     at yargs.parse (/home/evan/Projects/image-preload/packages/image-preload/node_modules/webpack-cli/bin/cli.js:241:39)
+13 error     at Object.parse (/home/evan/Projects/image-preload/packages/image-preload/node_modules/webpack-cli/node_modules/yargs/yargs.js:552:18)
+13 error     at /home/evan/Projects/image-preload/packages/image-preload/node_modules/webpack-cli/bin/cli.js:219:8
+13 error     at Object.<anonymous> (/home/evan/Projects/image-preload/packages/image-preload/node_modules/webpack-cli/bin/cli.js:530:3)
+13 error     at Module._compile (internal/modules/cjs/loader.js:654:30)
+13 error     at Object.Module._extensions..js (internal/modules/cjs/loader.js:665:10)
+13 error     at Module.load (internal/modules/cjs/loader.js:566:32)
+13 error     at tryModuleLoad (internal/modules/cjs/loader.js:506:12)
+13 error     at Function.Module._load (internal/modules/cjs/loader.js:498:3)
+13 error     at Function.Module.runMain (internal/modules/cjs/loader.js:695:10)
+13 error     at startup (internal/bootstrap/node.js:201:19)
+13 error     at bootstrapNodeJSCore (internal/bootstrap/node.js:516:3)
+13 error npm ERR! code ELIFECYCLE
+13 error npm ERR! errno 1
+13 error npm ERR! image-preload@1.0.3 build: `tsc -d --outDir dist --rootDir src && rm dist/main.js && webpack-cli --mode production && webpack-cli --mode-production --config webpack.browser.js`
+13 error npm ERR! Exit status 1
+13 error npm ERR!
+13 error npm ERR! Failed at the image-preload@1.0.3 build script.
+13 error npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+13 error
+13 error npm ERR! A complete log of this run can be found in:
+13 error npm ERR!     /home/evan/.npm/_logs/2018-06-08T03_44_53_601Z-debug.log
+13 error
+13 error > image-preload@1.0.3 build /home/evan/Projects/image-preload/packages/image-preload
+13 error > tsc -d --outDir dist --rootDir src && rm dist/main.js && webpack-cli --mode production && webpack-cli --mode-production --config webpack.browser.js
+13 error
+13 error Hash: dde31b72bdb2e003569a
+13 error Version: webpack 4.11.1
+13 error Time: 1407ms
+13 error Built at: 2018-06-07 20:44:52
+13 error   Asset      Size  Chunks             Chunk Names
+13 error main.js  5.51 KiB       0  [emitted]  main
+13 error [0] ./src/main.ts + 1 modules 8.88 KiB {0} [built]
+13 error     | ./src/main.ts 8.19 KiB [built]
+13 error     |     + 1 hidden module
+13 error
+13 error     at Promise.all.then.arr (/home/evan/.npm-global/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+13 error     at <anonymous>

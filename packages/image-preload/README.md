@@ -8,10 +8,13 @@ Simple, framework-agnostic image preloader. Async, sync, background, foreground,
 npm install --save image-preload
 ```
 
+Or you can use a browser script available from `https://unpkg.com/image-preload@1.0.6/browser/main.js`.
+
 ##### Minimal usage
 
 ```javascript
 import Preload from "image-preload";
+
 Preload(["https://i.imgur.com/VCr4saa.png"]);
 ```
 
