@@ -1,7 +1,7 @@
 {
   "name": "image-preload",
-  "version": "1.0.0",
-  "description": "TODO",
+  "version": "1.0.1",
+  "description": "Simple, framework-agnostic image preloader. Async, sync, background, foreground, whatever!",
   "main": "dist/main.js",
   "scripts": {
     "test": "jest",
@@ -9,10 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "TODO"
+    "url": "https://github.com/mini-eggs/image-preload"
   },
   "keywords": [
-    "TODO"
+    "image",
+    "preload",
+    "async",
+    "background"
   ],
   "author": "Evan M Jones <me@evanjon.es> (https://evanjon.es/)",
   "license": "MIT",
