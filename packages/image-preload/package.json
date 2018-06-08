@@ -1,6 +1,6 @@
 {
   "name": "image-preload",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple, framework-agnostic image preloader. Async, sync, background, foreground, whatever!",
   "main": "dist/main.js",
   "scripts": {

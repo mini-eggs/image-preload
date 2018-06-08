@@ -1,6 +1,6 @@
 {
   "name": "image-preload-test",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple React example of image-preload",
   "main": "src/index.html",
   "scripts": {
@@ -19,7 +19,7 @@
   "author": "Evan M Jones <me@evanjon.es> (https://evanjon.es)",
   "license": "MIT",
   "dependencies": {
-    "image-preload": "^1.0.4",
+    "image-preload": "^1.0.5",
     "react": "^16.4.0",
     "react-dom": "^16.4.0"
   },
