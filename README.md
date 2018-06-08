@@ -51,3 +51,18 @@ type Options = {
   onComplete?: Function;
 };
 ```
+
+#### Defaul options
+
+```javascript
+const defaultOptions = {
+  order: Order.InOrder,
+  timeout: 0,
+  shouldContinueOnFail: true,
+  toBase64: false,
+  inBackground: false,
+  onSingleImageFail: () => {},
+  onSingleImageComplete: () => {},
+  onComplete: () => {}
+};
+```
