@@ -1,0 +1,50 @@
+{
+  "name": "image-preload",
+  "version": "1.0.0",
+  "description": "TODO",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc -d --outDir dist --rootDir src && rm dist/main.js && webpack-cli --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "TODO"
+  },
+  "keywords": [
+    "TODO"
+  ],
+  "author": "Evan M Jones <me@evanjon.es> (https://evanjon.es/)",
+  "license": "MIT",
+  "dependencies": {
+    "greenlet": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.0.0",
+    "@types/node": "^10.3.2",
+    "jest": "^23.1.0",
+    "ts-jest": "^22.4.6",
+    "ts-loader": "^4.3.1",
+    "typescript": "^2.9.1",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/tests/*.+(ts|tsx|js)"
+    ]
+  }
+}
